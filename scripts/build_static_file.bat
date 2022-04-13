@@ -13,7 +13,7 @@ SET parent=%~dp0
 SET log=%parent%logs\%me%.log
 
 :: name of static mission file to create
-SET build_filename=FAM-FLIGHT_NTTR.lua
+SET build_filename=NTTR_NOMODS.lua
 ECHO Static file name:           %build_filename%
 
 SET build_path=%parent%static\
@@ -37,6 +37,7 @@ ECHO.
 :: Add dynamic files
 CALL :buildfile mission_init.lua
 CALL :buildfile devcheck.lua
+CALL :buildfile msrs.lua
 CALL :buildfile adminmenu.lua
 CALL :buildfile missiontimer.lua
 CALL :buildfile missiletrainer.lua
