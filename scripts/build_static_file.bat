@@ -37,10 +37,14 @@ ECHO.
 :: Add dynamic files
 CALL :buildfile mission_init.lua
 CALL :buildfile devcheck.lua
+CALL :buildfile disableai.lua
 CALL :buildfile msrs.lua
 CALL :buildfile adminmenu.lua
 CALL :buildfile missiontimer.lua
 CALL :buildfile missiletrainer.lua
+CALL :buildfile dynamicranges.lua
+CALL :buildfile bfmacm.lua
+CALL :buildfile bvrgci.lua
 CALL :buildfile supportaircraft.lua
 CALL :buildfile mission_end.lua
 
